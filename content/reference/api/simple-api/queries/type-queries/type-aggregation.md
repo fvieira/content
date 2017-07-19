@@ -67,3 +67,9 @@ query {
   }
 }
 ```
+
+## More Aggregation Options
+
+Currently, count is the only available aggregation. For specific use cases, you can use [functions]() to precalculate certain aggregations and update them when data changes.
+
+Please join the discussion on [GitHub](https://github.com/graphcool/feature-requests/issues/70) if you are interested in a specific aggregation.

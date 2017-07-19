@@ -31,3 +31,4 @@ the following type queries will be available:
 
 * the `Post` query [to fetch a single node]().
 * the `allPost` query [to fetch multiple nodes]().
+* the `_allPostsMeta` query [to fetch aggregated information]().
