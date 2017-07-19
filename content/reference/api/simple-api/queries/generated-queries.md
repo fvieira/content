@@ -54,11 +54,10 @@ query {
 }
 ```
 
-Different queries are available:
+Here's a list of available queries. To explore them, use the [playground](!alias-oe1ier4iej) inside your project.
 
 * For every [type](!alias-ij2choozae) in your [GraphQL schema](!alias-ahwoh2fohj), so called type queries will be generated to fetch [single](!alias-ua6eer7shu) or [multiple nodes](!alias-pa2aothaec) for that type.
 * Queries can be used to [traverse the data graph](!alias-aihaeph5ip) whenever there's a [relation](!alias-goh5uthoc1).
-* Some queries support [query arguments](!alias-ohrai1theo) to further control the query response.
-* A special query to get more information on [an authenticated user](!alias-gieh7iw2ru) is available.
+* Additionally, [custom queries]() can be added to your API using [Schema Extensions]()
 
-To explore the available queries, use the [playground](!alias-oe1ier4iej) inside your project.
+Some queries support [query arguments](!alias-ohrai1theo) to further control the query response.
