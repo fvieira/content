@@ -21,6 +21,6 @@ related:
     - thoh9chaek
 ---
 
-# Extended Mutations in the Simple API
+# Custom Mutations in the Simple API
 
 Custom mutations can be added to your GraphQL API using Schema Extensions.
