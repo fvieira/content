@@ -34,4 +34,6 @@ query {
 }
 ```
 
-Note: You can add filter query arguments to an inner field returning a single node.
+The `author` field exposes a further selection of properties that are defined on the `Author` type.
+
+> Note: You can add filter query arguments to an inner field returning a single node.

@@ -37,4 +37,4 @@ type User {
 the following fields will be available:
 
 * the `Post` and `allPosts` queries expose a new `author` field to [traverse one node]().
-* the `User` and `allUsers` queries expose a new `posts` field  to [traverse many nodes]() and a field `_postsMeta` [for relation aggregation]().
+* the `User` and `allUsers` queries expose a new `posts` field  to [traverse many nodes]() and a `_postsMeta` to fetch [relation aggregation data]().
