@@ -42,7 +42,7 @@ query {
 }
 ```
 
-## Count the number of nodes with a filter
+## Count the number of nodes matching a certain filter condition
 
 > Count the number of all `User` nodes with `accessRole` `ADMIN`:
 
