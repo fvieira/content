@@ -18,12 +18,7 @@ related:
 
 # Subscriptions
 
-*GraphQL subscriptions* allow you to be notified in realtime of changes to your data.
-All available subscriptions are automatically generated. To explore them, use the [playground](!alias-oe1ier4iej) inside your project.
-
-You subscribe to a subscription using your [endpoint](!alias-yahph3foch#project-endpoints) using websockets.
-
-This is an example subscription that notifies you whenever a new post is created:
+*GraphQL subscriptions* allow you to be notified in realtime of changes to your data. This is an example subscription that notifies you whenever a new post is created:
 
 ```graphql
 ---
@@ -57,4 +52,11 @@ subscription newPosts {
 }
 ```
 
-You can subscribe to a single mutation or combine multiple mutations that you want to subscribe on. In both cases you can use filters to describe exactly what mutation events you are interested in.
+Subscriptions use [a special websocket endpoint](!alias-yahph3foch#project-endpoints).
+
+Here's a list of available subscriptions. To explore them, use the [playground](!alias-oe1ier4iej) inside your project.
+
+* For every [type](!alias-ij2choozae) in your [GraphQL schema](!alias-ahwoh2fohj), a [type subscription]() is available to listen for changes when a node of this type is created, updated or deleted.
+* Currently, connecting or disconnecting nodes in a [relation](!alias-goh5uthoc1) does not trigger any subscription yet. Read more about the [available workarounds here]().
+
+You can [combine multiple subscription conditions](!alias-kengor9ei3) into one subscription query.
