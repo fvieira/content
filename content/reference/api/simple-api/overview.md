@@ -14,13 +14,13 @@ related:
 
 # API
 
-The **Simple API** offers many ways to interact with the data in your Graphcool project. Different options exist to [make requests to the Simple API]().
+The **Simple API** offers many ways to interact with the data in your Graphcool project. Different options exist to [make requests to the Simple API](!alias-koo4eevun4).
 
 The foundation for the API are the automatically generated CRUD-style operations that are based on your [data schema](). Additionally, you can use [Schema Extensions]() to enhance your GraphQL schema with additional operations. There are three categories of available operations:
 
-* [GraphQL Queries]() are used to fetch data
-* [GraphQL Mutations]() are used to modify data
-* [GraphQL Subscriptions]() are used to get notified of data changes in realtime.
+* [GraphQL Queries](!alias-nia9nushae) are used to fetch data
+* [GraphQL Mutations](!alias-ol0yuoz6go) are used to modify data
+* [GraphQL Subscriptions](!alias-aip7oojeiv) are used to get notified of data changes in realtime.
 
 The Simple API offers an [error handling](!alias-aecou7haj9) concept as well.
 
