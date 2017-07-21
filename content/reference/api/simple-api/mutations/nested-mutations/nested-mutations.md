@@ -21,22 +21,18 @@ related:
     - vietahx7ih
 ---
 
-# Nested Mutations
+# Nested Mutations in the Simple API
 
-When creating or updating nodes, you can connect it to an existing related node or create a new related node that will be connected as well.
+When creating or updating nodes, you can execute _nested mutations_ to interact with connected parts of your type schema.
 
-## Nested Create Mutations
-
-For every relation of a type, the `update` and `create` mutations expose an argument to issue a nested create operation on the related type. Depending on the relation multiplicity, this argument allows to either create a single related node (for to-one relations) or multiple related nodes (for to-many relations).
-
-[Read more about nested create mutations](!alias-vaet3eengo).
-
-## Nested Connect Mutations
-
-For every relation of a type, the `update` and `create` mutations expose an argument to connect the original node to an existing related node. Depending on the relation multiplicity, this argument allows to either add a single related node (for to-one relations) or multiple related nodes (for to-many relations) to the relation.
-
-[Read more about nested connect mutations](!alias-tu9ohwa1ui).
+* to **create and connect to a new node** on the other side of a relation, you can use [nested create mutations](!alias-vaet3eengo).
+* to **connect to an existing node** on the other side of a relation, you can use [nested connect mutations](!alias-tu9ohwa1ui).
 
 ## Limitations
 
-* Currently, the maximum nested level is 3. If you want to nest more often than that, you need to split up the nested mutations into two separate mutations. Please [join the discussion](https://github.com/graphcool/feature-requests/issues/313) for an according feature request to increase this limit.
+Different limitations and improvement suggestions are available. Please join the discussion on GitHub!
+
+* [Nested delete mutations](https://github.com/graphcool/feature-requests/issues/42) are not available yet. Neither are [cascading deletes](https://github.com/graphcool/feature-requests/issues/47).
+* Currently, the [maximum nested level is 3](https://github.com/graphcool/feature-requests/issues/313). If you want to nest more often than that, you need to split up the nested mutations into two separate mutations.
+
+Many other [suggestions and improvements](https://github.com/graphcool/feature-requests/issues/127) are currently being discussed.
