@@ -33,7 +33,7 @@ The Simple API is supposed to be consumed by GraphQL clients such as [Apollo Cli
 
 ## Apollo Client
 
-### Setup
+### Usage
 
 To set up the client with your endpoint:
 
@@ -47,22 +47,28 @@ const client = new ApolloClient({
 
 Now you can use Apollo to do queries and mutations. If you are unsure about the setup, check our Instagram example app using Apollo in [React](https://github.com/graphcool-examples/react-graphql/tree/master/quickstart-with-apollo) or [Angular 2](https://github.com/graphcool-examples/angular-graphql/tree/master/quickstart-with-apollo). Find more information in the official [documentation](http://dev.apollodata.com/).
 
-## Lokka
+## graphql-request
 
-### Setup
+[`graphql-=request`](https://github.com/graphcool/graphql-request) is a minimal GraphQL client supporting Node and browsers for server-side scripts or simple applications.
+
+### Usage
 
 To set up the client with your endpoint:
 
 ```javascript
-const Lokka = require('lokka').Lokka
-const Transport = require('lokka-transport-http').Transport
+const { request } = require('graphql-request')
 
-const client = new Lokka({
-  transport: new Transport('https://api.graph.cool/simple/v1/__PROJECT_ID__')
-})
+const query = `{
+  Movie(title: "Inception") {
+    releaseDate
+    actors {
+      name
+    }
+  }
+}`
+
+request('https://api.graph.cool/simple/v1/movies', query).then(data => console.log(data))
 ```
-
-Now you can use Lokka to do queries and mutations. If you are unsure about the setup, check our [Todo example app using Lokka](https://github.com/graphcool-examples/react-graphql/tree/master/quickstart-with-lokka-and-mobx). Find more information in the official [documentation](https://github.com/kadirahq/lokka/blob/master/README.md).
 
 ## HTTP and WebSockets
 
