@@ -80,6 +80,20 @@ Here is an overview of possible errors that you might encounter:
 
 **Code 3025: Auth0IdTokenIsInvalid**
 
+**Code 3026: InvalidFirstArgument**
+
+**Code 3027: InvalidLastArgument**
+
+**Code 3028: InvalidSkipArgument**
+
+**Code 3031: GenericServerlessFunctionError**
+
+**Code 3032: RelationIsRequired**
+
+**Code 3033: FilterCannotBeNullOnToManyField**
+
+**Code 3034: UnhandledFunctionError**
+
 > For example, when you try to update a post but specify a non-existing id:
 
 ```graphql
