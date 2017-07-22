@@ -138,6 +138,4 @@ mutation {
 
 **Internal Server Errors**
 
-*Internal server errors* indicate that something went wrong with our service - whoops! Find us at our [Slack channel](http://slack.graph.cool) so we can help you out and fix the issue.
-
-You do not have to investigate this issue further in your client application.
+*Internal server errors* indicate that something went wrong with our service - whoops! Please contact us from the Console (https://console.graph.cool) or via email (support@graph.cool) and include your Request ID so we can help you out and fix the issue.
