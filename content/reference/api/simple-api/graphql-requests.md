@@ -22,7 +22,7 @@ The Simple API is supposed to be consumed by GraphQL clients such as Apollo Clie
 
 The [Graphcool Playground]() can be used to explore and run GraphQL mutations, queries and subscriptions.
 
-Before diving into a specific implementation, **it's often better to get familiar with the GraphQL schema in the playground first**.
+Before diving into a specific implementation, **it's often better to get familiar with the available operations in the playground first**.
 
 ## Apollo Client
 

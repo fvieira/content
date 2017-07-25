@@ -136,3 +136,7 @@ mutation {
 **Internal Server Errors**
 
 *Internal server errors* indicate that something went wrong with our service - whoops! Please contact us from the Console (https://console.graph.cool) or via email (support@graph.cool) and include your Request ID so we can help you out and fix the issue.
+
+## Function Errors
+
+Graphcool Functions offer their own [error handling](!alias-quawa7aed0) concept that allows you to return user-friendly error messages from within a function.

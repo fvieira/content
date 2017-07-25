@@ -16,16 +16,24 @@ related:
 
 When using Apollo Client, you can use `subscription-transport-ws` to combine it with a WebSocket client. [Here's an example](https://github.com/graphcool-examples/react-graphql/tree/master/subscriptions-with-apollo-instagram).
 
-You can also use any WebSocket client as described below.
+You can also use the GraphQL Playground or any WebSocket client as described below.
 
-## Establish connection
+## Playground
+
+The [Graphcool Playground]() can be used to explore and run GraphQL subscriptions.
+
+Before diving into a specific implementation, **it's often better to get familiar with the available operations in the playground first**.
+
+## Plain WebSockets
+
+### Establish connection
 
 Subscriptions are managed through WebSockets. First establish a WebSocket connection and specify the `graphql-subscriptions` protocol:
 
 ```javascript
 let webSocket = new WebSocket('wss://subscriptions.graph.cool/v1/__PROJECT_ID__', 'graphql-subscriptions');
 ```
-## Initiate Handshake
+### Initiate Handshake
 
 Next you need to initiate a handshake with the WebSocket server. You do this by listening to the `open` event and then sending a JSON message to the server with the `type` property set to `init`:
 
@@ -39,7 +47,7 @@ webSocket.onopen = (event) => {
 }
 ```
 
-## React to Messages
+### React to Messages
 
 The server may respond with a variety of messages distinguished by their `type` property. You can react to each message as appropriate for your application:
 
@@ -76,7 +84,7 @@ webSocket.onmessage = (event) => {
 }
 ```
 
-## Subscribe to Data Changes
+### Subscribe to Data Changes
 
 To subscribe to data changes, send a message with the `type` property set to `subscription_start`:
 
@@ -104,7 +112,7 @@ webSocket.send(JSON.stringify(message))
 
 You should receive a message with `type` set to `subscription_success`. When data changes occur, you will receive messages with `type` set to `subscription_data`. The `id` property that you supply in the `subscription_start` message will appear on all `subscription_data` messages, allowing you to multiplex your WebSocket connection.
 
-## Unsubscribe from Data Changes
+### Unsubscribe from Data Changes
 
 To unsubscribe from data changes, send a message with the `type` property set to `subscription_end`:
 

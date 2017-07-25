@@ -44,6 +44,6 @@ type Address {
 
 these relation mutations will be available
 
-* the `setUserAddress` and `unsetUserAddress` mutations [connect and disconnect two nodes](!alias-zeich1raej) in the **one-to-one** relation `UserAddress`
-* the `addToWrittenPosts` and `removeFromWrittenPosts` mutations [connect and disconnect two nodes](!alias-ofee7eseiy) in the **one-to-many** relation `UserOnPosts`
-* the `addToLikedPosts` and `removeFromLikedPosts` mutations [connect and disconnect two nodes](!alias-aengu5iavo) in the a **one-to-one** relation `UsersOnPosts`
+* the `setUserAddress` and `unsetUserAddress` mutations [connect and disconnect two nodes](!alias-zeich1raej) in the **one-to-one** relation `UserAddress`.
+* the `addToWrittenPosts` and `removeFromWrittenPosts` mutations [connect and disconnect two nodes](!alias-ofee7eseiy) in the **one-to-many** relation `UserOnPosts`.
+* the `addToLikedPosts` and `removeFromLikedPosts` mutations [connect and disconnect two nodes](!alias-aengu5iavo) in the a **one-to-one** relation `UsersOnPosts`.

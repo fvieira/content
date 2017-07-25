@@ -29,6 +29,6 @@ type Post {
 
 the following type mutations will be available:
 
-* the `createPost` mutation [create a new node](!alias-wooghee1za)
-* the `updatePost` mutation [updates an existing node](!alias-cahkav7nei)
-* the `deletePost` mutation [deletes an existing node](!alias-fasie2rahv)
+* the `createPost` mutation [create a new node](!alias-wooghee1za).
+* the `updatePost` mutation [updates an existing node](!alias-cahkav7nei).
+* the `deletePost` mutation [deletes an existing node](!alias-fasie2rahv).
