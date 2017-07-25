@@ -56,7 +56,7 @@ Subscriptions use [a special websocket endpoint](!alias-yahph3foch#project-endpo
 
 Here's a list of available subscriptions. To explore them, use the [playground](!alias-oe1ier4iej) inside your project.
 
-* For every [type](!alias-ij2choozae) in your [GraphQL schema](!alias-ahwoh2fohj), a [type subscription]() is available to listen for changes when a node of this type is created, updated or deleted.
-* Currently, connecting or disconnecting nodes in a [relation](!alias-goh5uthoc1) does not trigger any subscription yet. Read more about the [available workaround here]().
+* For every [type](!alias-ij2choozae) in your [GraphQL schema](!alias-ahwoh2fohj), a [type subscription query]() is available to listen for changes to nodes of this.
+* Currently, connecting or disconnecting nodes in a [relation](!alias-goh5uthoc1) does not trigger any subscription yet. Read more about [available workaround]() for this limitation.
 
-You can [combine multiple subscription triggers](!alias-kengor9ei3) into one subscription query and all subscriptions offer certain [subscription filters]() to control of which events exactly you want to be notified.
+You can [combine multiple subscription triggers](!alias-kengor9ei3) into one subscription query to control exactly what events you want to be notified of.

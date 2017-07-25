@@ -27,4 +27,4 @@ type Post {
 }
 ```
 
-a `Post` subscription is available that you can use to be notified whenever certain nodes are, [created](!alias-oe8oqu8eis), [updated](!alias-ohmeta3pi4) or [deleted](!alias-bag3ouh2ii).
+a `Post` subscription is available that you can use to be notified whenever certain nodes are [created](!alias-oe8oqu8eis), [updated](!alias-ohmeta3pi4) or [deleted](!alias-bag3ouh2ii).
