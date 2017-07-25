@@ -2,7 +2,7 @@
 alias: ol0yuoz6go
 path: /docs/reference/simple-api/mutations
 layout: REFERENCE
-description: Use mutations to modify data. Mutations in the GraphQL schema of your project are derived from types and relations that you defined.
+description: A GraphQL mutation is used to modify data at a GraphQL endpoint.
 simple_relay_twin: vah0igucil
 tags:
   - simple-api
@@ -18,10 +18,7 @@ related:
 
 # Mutations
 
-With a *mutation* you can modify the data of your project.
-Similar to queries, all mutations are automatically generated. Explore them by using the [playground](!alias-oe1ier4iej) inside your project.
-
-This is an example mutation:
+A *GraphQL mutation* is used to modify data at a GraphQL [endpoint](!alias-yahph3foch#project-endpoints). This is an example mutation:
 
 ```graphql
 ---
@@ -50,28 +47,9 @@ mutation {
 }
 ```
 
-Note: The subselection of fields cannot be empty. If you have no specific data requirements, you can always select `id` as a default.
+Here's a list of available mutations. To explore them, use the [playground](!alias-oe1ier4iej) inside your project.
 
-## Modifying nodes
-
-For every [type](!alias-ij2choozae) in your project, there are different mutations to
-
-* [Create nodes](!alias-wooghee1za)
-* [Updating nodes](!alias-cahkav7nei)
-* [Deleting nodes](!alias-fasie2rahv)
-
-## Modifying edges
-
-For every [relation](!alias-goh5uthoc1) in your project, there are mutations to connect and disconnect related nodes via an edge. The actual mutations depend on the multiplicity relations, so there are the following cases:
-
-* [modifying edges for one-to-one relations](!alias-zeich1raej)
-* [modifying edges for one-to-many relations](!alias-ofee7eseiy)
-* modifying edges for many-to-many relations
-
-## User Authentication
-
-Mutations related to [user authentication](!alias-eixu9osueb) allow you to create new users or sign in existing ones.
-
-## File Management
-
-Mutations related to [file management](!alias-eetai5meic) allow you to upload, rename or delete files.
+* For every [type](!alias-ij2choozae) in your [GraphQL schema](!alias-ahwoh2fohj), so called type mutations will be generated. They can be used to [create](), [update]() and [delete]() nodes of that type.
+* For every [relation](!alias-goh5uthoc1) in your [GraphQL schema](!alias-ahwoh2fohj), [relation mutations]() will be generated. They can be used to connect or disconnect nodes in that relation.
+* Furthermore, [nested mutations]() can be used to executed multiple mutations across types at the same time.
+* Additionally, [custom mutations]() can be added to your API using [Schema Extensions]().

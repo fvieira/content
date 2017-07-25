@@ -17,7 +17,7 @@ related:
 
 For every available [relation](!alias-goh5uthoc1) in your [GraphQL schema](!alias-ahwoh2fohj), certain mutations are automatically generated.
 
-The names and arguments of the generated mutations depend on the relation name and the multiplicity. For example, with the following schema:
+The names and arguments of the generated mutations depend on the relation name and its cardinalities. For example, with the following schema:
 
 ```graphql
 type Post {
@@ -42,8 +42,8 @@ type Address {
 }
 ```
 
-the following relation mutations will be available
+these relation mutations will be available
 
 * the `setUserAddress` and `unsetUserAddress` mutations [connect and disconnect two nodes](!alias-zeich1raej) in the **one-to-one** relation `UserAddress`
 * the `addToWrittenPosts` and `removeFromWrittenPosts` mutations [connect and disconnect two nodes](!alias-ofee7eseiy) in the **one-to-many** relation `UserOnPosts`
-* the `addToLikedPosts` and `removeFromLikedPosts` mutations [connect and disconnect two nodes](!alias-aengu5iavo) For a **one-to-one** relation called `UsersOnPosts`
+* the `addToLikedPosts` and `removeFromLikedPosts` mutations [connect and disconnect two nodes](!alias-aengu5iavo) in the a **one-to-one** relation `UsersOnPosts`
