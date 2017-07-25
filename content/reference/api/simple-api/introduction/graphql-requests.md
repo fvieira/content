@@ -1,8 +1,8 @@
 ---
 alias: koo4eevun4
-path: /docs/reference/simple-api/graphql-requests
+path: /docs/reference/simple-api/sending-graphql-requests
 layout: REFERENCE
-shorttitle: GraphQL Requests
+shorttitle: Sending GraphQL Requests
 description: Requests to the Simple API can be done with Apollo Client, graphql-request or plain HTTP.
 simple_relay_twin: thaiph8ung
 tags:
@@ -14,7 +14,7 @@ related:
   more:
 ---
 
-# GraphQL Requests to the Simple API
+# Sending GraphQL Requests to the Simple API
 
 The Simple API is supposed to be consumed by GraphQL clients such as Apollo Client or  `graphql-request` and can be also consumed with plain HTTP requests.
 
