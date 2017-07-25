@@ -24,7 +24,7 @@ To interact with the [file management](!alias-eer4wiang0) of the platform, you c
 
 ## Uploading files
 
-Coming soon. For now, use [the File API directly](!alias-eer4wiang0) to upload files.
+Uploading files with a GraphQL mutation is not supported yet. For now, use [the File API directly](!alias-eer4wiang0) to upload files.
 
 ## Reading meta information of files
 
