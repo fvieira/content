@@ -128,11 +128,11 @@ mutation {
 
 ## Disconnect two nodes in a one-to-one relation
 
-Removes an edge of a node speficied by `id`.
+Removes an edge between two nodes speficied by their `id`.
 
 The query response can contain both nodes of the former edge. The names of query arguments and node names depend on the field names of the relation.
 
-> Removes an edge from the relation called `PostCategory` and query the category name and the post title:
+> Removes an edge from the relation called `PostMetaInformation` and query the tags stored in the meta information and the post title:
 
 ```graphql
 ---
@@ -155,7 +155,7 @@ mutation {
 ---
 {
   "data": {
-    "setPostMetaInformation": {
+    "unsetPostMetaInformation": {
       "metaInformationMetaInformation": {
         "tags": [
           "GENERAL"
