@@ -26,23 +26,24 @@ Let's assume the following schema:
 ```idl
 type Author {
   id: ID!
-  contactDetails: ContactDetails
-  posts: [Post]
+  contactDetails: ContactDetails @relation(name: "AuthorContactDetails")
+  posts: [Post!]! @relation(name: "AuthorPosts")
   description: String!
 }
 
 type ContactDetails {
   id: ID!
-  author: Author
+  author: Author @relation(name: "AuthorContactDetails")
   email: String!
 }
 
 type Post {
   id: ID!
   text: String!
-  author: Author
+  author: Author @relation(name: "AuthorPosts")
 }
 ```
+
 
 We're considering the `createAuthor` and `updateAuthor` mutation to see how to connect nested nodes for the *to-one* relation `AuthorContactDetails` and the *to-many* relation `AuthorPosts`.
 
