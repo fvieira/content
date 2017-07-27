@@ -27,7 +27,7 @@ Let's assume the following schema:
 type Author {
   id: ID!
   contactDetails: ContactDetails @relation(name: "AuthorContactDetails")
-  posts: [Post] @relation(name: "AuthorPosts")
+  posts: [Post!]! @relation(name: "AuthorPosts")
   description: String!
 }
 
