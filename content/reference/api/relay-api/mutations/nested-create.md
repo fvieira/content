@@ -26,21 +26,21 @@ Let's assume the following schema:
 ```idl
 type Author {
   id: ID!
-  contactDetails: ContactDetails
-  posts: [Post]
+  contactDetails: ContactDetails @relation(name: "AuthorContactDetails")
+  posts: [Post!]! @relation(name: "AuthorPosts")
   description: String!
 }
 
 type ContactDetails {
   id: ID!
-  author: Author
+  author: Author @relation(name: "AuthorContactDetails")
   email: String!
 }
 
 type Post {
   id: ID!
   text: String!
-  author: Author
+  author: Author @relation(name: "AuthorPosts")
 }
 ```
 
